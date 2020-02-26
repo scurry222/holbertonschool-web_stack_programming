@@ -45,16 +45,15 @@ body {
 
   .toggle-cb + label::after {
     position: relative;
-    content: "";
-    top: -5.8rem;
     width: 7rem;
     height: 7rem;
-    background-color: #fff;
-    border-radius: 100%;
-    border: 0.1rem solid #c6c6c6;
-    transition: ease 0.3s;
-    color: #c6c6c6;
+    top: -5.8rem;
     margin-left: 10.5rem;
+    color: #c6c6c6;
+    background-color: #fff;
+    border: 0.1rem solid #c6c6c6;
+    border-radius: 100%;
+    transition: ease 0.3s;
     content: "";
   }
 
