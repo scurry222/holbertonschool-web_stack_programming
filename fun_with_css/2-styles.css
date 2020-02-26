@@ -1,3 +1,8 @@
+html {
+    font-size: 16px; 
+    /* default 16px */
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -20,9 +25,9 @@ body {
 .toggle-cb + label::before, .toggle-cb + label::after {
     display: block;
     position: relative;
-    width: 98%;
-    height: 95%;
-    left: .15rem;
+    width: 98.8%;
+    height: 96%;
+    left: .08rem;
     top: .1rem;
   }
 
@@ -46,7 +51,7 @@ body {
     height: 7rem;
     background-color: #fff;
     border-radius: 100%;
-    border: 0.04rem solid #c6c6c6;
+    border: 0.1rem solid #c6c6c6;
     transition: ease 0.3s;
     color: #c6c6c6;
     margin-left: 10.5rem;
@@ -63,4 +68,3 @@ body {
     margin-left: -1rem;
     content: "";
   }
-
