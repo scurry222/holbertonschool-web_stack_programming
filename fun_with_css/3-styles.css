@@ -1,0 +1,105 @@
+html {
+    font-size: 16px; 
+    /* default 16px */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* height: 35rem; */
+}
+
+input {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-open-button {
+    display: flex;
+    position: relative;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: .4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: .15rem solid #D02C42;
+    border-radius: 100%;
+    color: white;
+    background: #D02C42;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.menu-open-button:hover {
+    transform: scale(1.2);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.menu-line {
+    display: block;
+    background: white;
+    width: 1.5rem;
+    height: .15rem;
+    margin: .15rem;
+    transition: all 0.3s ease;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-1 {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-2 {
+    display: none;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-3 {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.menu-item {
+    display: flex;
+    visibility: hidden;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: .4rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #D02C42;
+    border: .15rem solid #D02C42;
+    border-radius: 100%;
+    transition: .3s ease;
+}
+
+.menu-open ~ .menu-item {
+    margin-top: -5rem;
+    /* margin: .4rem; */
+}
+
+.menu-open:checked ~ .menu-item {
+    visibility: visible;
+    /* display: flex; */
+    margin-top: .75rem;
+    /* margin: .4rem; */
+}
+
+.menu-item:hover {
+    background: white;
+    color: #D02C42;
+}
